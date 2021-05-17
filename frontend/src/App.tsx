@@ -1,9 +1,10 @@
-import { Nav } from './components';
+import { Header } from './components';
+import './app.scss';
 
 function App() {
   return (
-    <div>
-      <Nav />
+    <div className="container">
+      <Header />
     </div>
   );
 }
