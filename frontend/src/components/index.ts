@@ -1,3 +1,4 @@
 import Header from './header';
+import Image from './image';
 
-export { Header };
+export { Header, Image };
