@@ -1,0 +1,19 @@
+.masonry {
+  max-width: 90%;
+  margin: 0 auto;
+  columns: 3 400px;
+  column-gap: 0.75rem;
+
+  div {
+    color: white;
+    display: inline-block;
+    width: 100%;
+  }
+  @for $i from 1 through 36 {
+    div:nth-child(#{$i}) > img {
+      $h: (random(400) + 100) + px;
+      height: $h;
+      line-height: $h;
+    }
+  }
+}
