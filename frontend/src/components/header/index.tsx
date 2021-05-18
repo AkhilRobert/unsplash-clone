@@ -1,4 +1,7 @@
+import { useState } from 'react';
+
 import { BiSearch } from 'react-icons/bi';
+import Modal from '../modal';
 
 import './style/header.scss';
 
@@ -19,23 +22,30 @@ function Logo() {
 }
 
 function Nav() {
+  const [showModal, setShowModal] = useState<boolean>(false);
+
   return (
-    <header className="header">
-      <div className="header__left">
-        <Logo />
-        <div className="header__brand">
-          <p className="header__brand-name">Unsplash</p>
-          <p className="header__brand-motto">photos for every one</p>
+    <>
+      <header className="header">
+        <div className="header__left">
+          <Logo />
+          <div className="header__brand">
+            <p className="header__brand-name">Unsplash</p>
+            <p className="header__brand-motto">photos for every one</p>
+          </div>
+          <div className="header__search">
+            <input type="text" className="header__search-input" placeholder="search for image" />
+            <BiSearch className="header__search-icon" />
+          </div>
         </div>
-        <div className="header__search">
-          <input type="text" className="header__search-input" placeholder="search for image" />
-          <BiSearch className="header__search-icon" />
+        <div>
+          <button className="header__button" onClick={() => setShowModal((modal) => !modal)}>
+            Add Image
+          </button>
         </div>
-      </div>
-      <div>
-        <button className="header__button">Add Image</button>
-      </div>
-    </header>
+      </header>
+      {showModal && <Modal onClose={() => setShowModal((modal) => !modal)} />}
+    </>
   );
 }
 

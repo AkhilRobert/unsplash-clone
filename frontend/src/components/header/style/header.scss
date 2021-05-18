@@ -69,5 +69,10 @@
     padding: 12px;
     color: #fff;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 4px 8px 0 rgba($color: #3db46e, $alpha: 0.8);
+    }
   }
 }
