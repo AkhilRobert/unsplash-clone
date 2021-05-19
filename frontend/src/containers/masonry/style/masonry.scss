@@ -7,9 +7,9 @@
   div {
     color: white;
     display: inline-block;
-    width: 100%;
   }
-  @for $i from 1 through 36 {
+
+  @for $i from 1 through 100 {
     div:nth-child(#{$i}) > img {
       $h: (random(400) + 100) + px;
       height: $h;

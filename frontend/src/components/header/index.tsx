@@ -16,7 +16,7 @@ function Logo() {
       aria-hidden="false"
     >
       <title id="unsplash-home">Unsplash Home</title>
-      <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+      <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z" />
     </svg>
   );
 }
