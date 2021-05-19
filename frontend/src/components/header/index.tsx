@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import { BiSearch } from 'react-icons/bi';
-import Modal from '../modal';
+import { BiSearch } from "react-icons/bi";
+import Modal from "../modal";
 
-import './style/header.scss';
+import "./style/header.scss";
 
 function Logo() {
   return (
@@ -21,7 +21,7 @@ function Logo() {
   );
 }
 
-function Nav() {
+function Header() {
   const [showModal, setShowModal] = useState<boolean>(false);
 
   return (
@@ -34,12 +34,19 @@ function Nav() {
             <p className="header__brand-motto">photos for every one</p>
           </div>
           <div className="header__search">
-            <input type="text" className="header__search-input" placeholder="search for image" />
+            <input
+              type="text"
+              className="header__search-input"
+              placeholder="search for image"
+            />
             <BiSearch className="header__search-icon" />
           </div>
         </div>
         <div>
-          <button className="header__button" onClick={() => setShowModal((modal) => !modal)}>
+          <button
+            className="header__button"
+            onClick={() => setShowModal((modal) => !modal)}
+          >
             Add Image
           </button>
         </div>
@@ -49,4 +56,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Header;

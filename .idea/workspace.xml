@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3764f9be-0c56-48f0-bc65-3f799d6f1943" name="Default Changelist" comment="Finished setting up database">
+    <list default="true" id="3764f9be-0c56-48f0-bc65-3f799d6f1943" name="Default Changelist" comment="Finished the app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/routes/image_routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/imageRoute.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/image/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/image/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/modal/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/modal/style/modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/modal/style/modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/data.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +63,7 @@
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="false" />
   </component>
-  <component name="RunManager" selected="npm.dev:frontend">
+  <component name="RunManager" selected="npm.dev:backend">
     <configuration name="dev:backend" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/backend/package.json" />
       <command value="run" />
@@ -99,6 +108,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished setting up database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished setting up database" />
+    <MESSAGE value="Fixed the Modal bug" />
+    <MESSAGE value="Finished the app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished the app" />
   </component>
 </project>

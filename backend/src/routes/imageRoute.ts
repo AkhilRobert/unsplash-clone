@@ -1,9 +1,9 @@
 import { Router } from "express";
 import imageModel from "../db/model/imageModel";
 
-const route = Router();
+const imageRoute = Router();
 
-route.post("/", async (req, res) => {
+imageRoute.post("/", async (req, res) => {
   const { label, imageURL } = req.body;
 
   try {
@@ -21,9 +21,20 @@ route.post("/", async (req, res) => {
   }
 });
 
-route.get("/", async (_req, res) => {
+imageRoute.get("/", async (_req, res) => {
   const data = await imageModel.find();
   res.send(data);
 });
 
-export default route;
+imageRoute.delete("/", async (req, res) => {
+  const { id } = req.body;
+  try {
+    await imageModel.findByIdAndDelete(id);
+    res.send({ message: "deleted" });
+  } catch (error) {
+    console.log(error);
+    res.status(404).send({ message: "Image not found" });
+  }
+});
+
+export default imageRoute;
