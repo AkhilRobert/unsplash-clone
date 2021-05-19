@@ -7,6 +7,7 @@ type PropTypes = {
 };
 
 function Modal({ onClose }: PropTypes) {
+
   function handleSubmit(e: MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
   }
@@ -23,7 +24,7 @@ function Modal({ onClose }: PropTypes) {
           id="label"
           placeholder="Enter a label"
           className="modal__field-input"
-        ></input>
+        />
         <label htmlFor="link" className="modal__field-name">
           Photo URL
         </label>
